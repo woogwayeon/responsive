@@ -1,0 +1,203 @@
+/* WebFonts Roboto */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* Reset */
+
+html{ height: 0; }
+
+body,div,h1,h2,h3,h4,h5,h6,p,div,button,img,ul,li{ margin: 0; padding: 0; 
+	font-family: 'Roboto';
+	color: #fff; }
+
+h1,h2,h3,h4,h5,h6{ font-size:18px; 
+				font-weight: 1em; }
+
+img{ vertical-align: top; }
+ul{ list-style: none; }
+a{ text-decoration: none; color: white;
+	transition: 0.5s; }
+a:hover{ opacity: 0.6; }
+
+h2{ font-size: 20px; }
+h3{ font-size: 18px; font-weight: 300; }
+p{ font-size: 16px; font-weight: 300; }
+button{ border: none; background-color: #333; padding: 15px; border-radius:5px; }
+
+html{ scroll-behavior: smooth; }
+body{ overflow-x: hidden; }
+
+
+/* Visual */
+
+#visual{ background:  linear-gradient(#4997dc, #4e61c0);
+	width: 100%;
+	margin: 0 auto; }
+
+#visual .inner{ width: 80%;
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				padding-top: 100px;
+/*				border: 1px solid #000; */
+				}
+#visual .heading h1{ font-size: 45px; font-weight: 400; }
+#visual .heading p{ padding-top: 15px; padding-bottom: 15px;}
+#visual .iphone { padding-top: 20px; }
+#visual .iphone img{ width: 450px; }
+
+
+/* Sub visual */
+
+#sub-visual{ width: 100%; margin: 0 auto; 
+		background: #fff;
+		background-attachment: fixed; }
+
+.sub-inner{ width: 80%; margin: 0 auto;
+/*			border: 1px solid #000; */
+			padding-top: 20px;
+			padding-bottom: 150px;
+			position: relative; }
+.sub-inner h2{ color: #333; text-align: center; 
+			padding-bottom: 15px;
+			padding-top: 30px; }
+.sub-inner p{ color: #333; text-align: center;
+			padding-bottom: 10px; }
+.sub-inner button{ width: 130px; height: 50px;
+				position: absolute;
+				left: calc(50% - 130px/2);
+				top: calc(50%);
+				 }
+
+/* contents-offer */
+
+#content-offer{ background: #4e61c0;
+				width: 100%;
+				margin: 0 auto;
+				padding-top: 90px;
+				padding-bottom: 90px; }
+#content-offer .inner{ width: 80%; margin: 0 auto; }
+#content-offer .heading{ text-align: center;
+					padding-bottom: 20px; }
+#content-offer ul{ display: flex;
+/*					border: 3px solid #000;*/
+					justify-content: space-between; }
+#content-offer li{ width: 25%; margin: 0 auto;
+/*					border: 1px solid #000;*/
+					 }
+
+#content-offer a{ text-align: center; }
+#content-offer a h3{ padding-top: 10px;
+					padding-bottom: 10px; }
+
+.icon{ width: 80px; height: 80px; 
+	margin: 0 auto;
+	border-radius: 50%;
+	background: #fff; 
+	margin-top: 50px;
+	margin-bottom: 10px; }
+.icon i{ color:  #4e61c0;
+		font-size: 36px;
+		padding-top: 22px; }
+
+
+
+/* content-do */
+
+#content-do{ width: 80%; margin: 0 auto; }
+
+#content-do .heading{ padding-top: 100px;
+					padding-bottom: 60px; }
+
+#content-do .heading p, #content-do .heading h2{ color: #333; text-align: center; }
+
+
+#content-do .do-img{ width: 100%; margin: 0 auto; 
+					display: flex; 
+					flex-wrap: wrap; 
+					justify-content: center; }
+
+#content-do .do-img ul{ transition: 0.5s; }
+#content-do .do-img li{ position: relative; width: 50%; }
+#content-do .do-img li:hover img{ transform: scale(0.9); }
+#content-do .do-img li:hover .do-con{ transform: scale(0.9); }
+
+#content-do .do-img img{ width: 100%;}
+
+#content-do .do-img .do-con{ position: absolute;
+							left: 10%; top: 20%; }
+
+
+#content-do .do-img .do-con h3{ padding-bottom: 45px;
+	font-weight: 400; font-size: 24px; } 
+
+
+/* Footer */
+
+
+#footer{ padding-top: 50px;
+		padding-bottom: 50px; 
+		width: 80%; margin: 0 auto;}
+
+#footer .footer-icon{ width: 250px; margin: 0 auto;
+					display: flex;
+					justify-content: space-between; 
+					padding-bottom: 30px;
+/*					border: 1px solid #000;*/
+					 }
+
+#footer .footer-icon div{ background: #4e61c0;
+						width: 60px; height: 60px;
+						border-radius:50%; 
+						box-sizing: border-box;
+						padding: 17px;
+						padding-left: 19px; }
+#footer .footer-icon i{ font-size:24px;
+						text-align: center; }
+
+#footer .copy p{ text-align: center;
+	font-size: 14px; color: #333; }
+
+#footer .copy a>p{ text-align: center; font-size: 12px; 
+	color: #333; padding-top: 10px;}
+
+
+
+/* PC , 테블릿 가로 (해상도 768px ~ 1023px)*/ 
+/*@media all and (min-width:1023px){ 
+  ...
+} 
+*/
+/* 테블릿 세로 (해상도 768px ~ 1023px)*/ 
+@media all and (min-width:768px) and (max-width:1023px) {
+#visual .inner{ justify-content: center; }
+.sub-inner button{ top: 60%; }
+
+#content-offer ul{ flex-wrap: wrap;}
+#content-offer li{ width: 50%;}
+
+#content-do{ width: 100%; }
+} 
+
+/* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/ 
+@media all and (min-width:360px) and (max-width:767px) {
+#visual .inner{ justify-content: center;}
+#visual .iphone img{ width: 340px; }
+
+.sub-inner button{ top: 65%; }
+
+#content-offer ul{ flex-wrap: wrap;}
+#content-offer li{ width: 100%;}
+
+#content-do{ width: 100%; }
+#content-do .do-img li{ width: 100%; }
+
+
+} 
+
+
+
+
+
+
